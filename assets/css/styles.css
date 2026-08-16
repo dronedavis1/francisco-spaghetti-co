@@ -32,10 +32,35 @@ body{
   margin:0;
   font-family:var(--font-sans);
   color:var(--ink);
-  background:var(--white);
+  background:var(--white) url('images/fran-headshot.jpg');
+  background-repeat:repeat;
+  background-size:34px 34px;
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
   overflow-x:hidden;
+}
+
+/* ==========================================================================
+   FRAN OVERLOAD MODE — every photo slot on the site becomes a dense,
+   repeating grid of the same headshot. This is deliberate. Blame Fran.
+   ========================================================================== */
+.hero-media,
+.signature-frame,
+.menu-card-img,
+.split-media,
+.city-media,
+.experience-img{
+  background-image:url('images/fran-headshot.jpg');
+  background-repeat:repeat;
+  background-size:36px 36px;
+}
+.hero-media img,
+.signature-frame img,
+.menu-card-img img,
+.split-media img,
+.city-media img,
+.experience-img img{
+  display:none;
 }
 
 img{max-width:100%;display:block;}
@@ -300,7 +325,7 @@ p{margin:0;}
 
 /* ---------------- Menu ---------------- */
 .menu-section{
-  background:var(--bg-alt);
+  background:rgba(245,245,247,0.86);
   padding:120px 32px 130px;
 }
 .menu-section .display{max-width:900px;}
@@ -418,7 +443,7 @@ p{margin:0;}
 
 /* ---------------- Visit ---------------- */
 .visit{
-  background:var(--near-black);
+  background:rgba(10,10,11,0.88);
   color:#fff;
   padding:130px 32px 140px;
 }
@@ -451,7 +476,7 @@ p{margin:0;}
 
 /* ---------------- Footer ---------------- */
 .site-footer{
-  background:var(--near-black-2);
+  background:rgba(20,20,21,0.9);
   color:rgba(255,255,255,0.7);
   padding:70px 32px 30px;
 }
