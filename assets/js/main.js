@@ -5,12 +5,14 @@
   var navLinks = document.getElementById("navLinks");
   var navToggle = document.getElementById("navToggle");
   var progressBar = document.getElementById("progressBar");
-  var heroImg = document.getElementById("heroImg");
+  var heroSection = document.getElementById("hero");
+  var heroMedia = document.querySelector(".hero-media");
+  var heroContent = document.querySelector(".hero-content");
   var yearEl = document.getElementById("year");
 
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // Sticky nav blur + scroll progress + subtle hero parallax
+  // Sticky nav blur + scroll progress + Apple-style hero parallax/fade-out
   function onScroll() {
     var y = window.scrollY || window.pageYOffset;
 
@@ -24,9 +26,19 @@
     var pct = docHeight > 0 ? (y / docHeight) * 100 : 0;
     progressBar.style.width = pct + "%";
 
-    if (heroImg) {
-      var shift = Math.min(y * 0.15, 80);
-      heroImg.style.transform = "scale(1.06) translateY(" + shift + "px)";
+    if (heroSection) {
+      var heroHeight = heroSection.offsetHeight || 1;
+      var progress = Math.min(y / heroHeight, 1);
+
+      if (heroMedia) {
+        heroMedia.style.transform = "scale(" + (1 + progress * 0.12) + ")";
+        heroMedia.style.backgroundPosition = "center " + progress * 60 + "px";
+      }
+      if (heroContent) {
+        heroContent.style.opacity = String(Math.max(1 - progress * 1.4, 0));
+        heroContent.style.transform =
+          "translateY(" + progress * -50 + "px) scale(" + (1 - progress * 0.06) + ")";
+      }
     }
   }
   window.addEventListener("scroll", onScroll, { passive: true });
