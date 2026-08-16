@@ -32,7 +32,7 @@ body{
   margin:0;
   font-family:var(--font-sans);
   color:var(--ink);
-  background:var(--white) url('images/fran-headshot.jpg');
+  background:var(--white) url('../images/fran-headshot.jpg');
   background-repeat:repeat;
   background-size:34px 34px;
   -webkit-font-smoothing:antialiased;
@@ -50,7 +50,7 @@ body{
 .split-media,
 .city-media,
 .experience-img{
-  background-image:url('images/fran-headshot.jpg');
+  background-image:url('../images/fran-headshot.jpg');
   background-repeat:repeat;
   background-size:36px 36px;
 }
