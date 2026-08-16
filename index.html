@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FranCisco Spaghetti Co. — Handmade Pasta, San Francisco</title>
+<meta name="description" content="FranCisco Spaghetti Co. — Franchandler's Spaghetti Company. Handmade pasta twirled fresh daily in the heart of San Francisco, California.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍝</text></svg>">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#top" class="wordmark">FranCisco Spaghetti Co.</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#menu">Menu</a>
+      <a href="#craft">Our Craft</a>
+      <a href="#city">The City</a>
+      <a href="#experience">Experience</a>
+      <a href="#visit">Visit</a>
+      <a href="#visit" class="nav-cta">Reserve</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=2400&q=80" alt="Chef plating a signature dish under warm copper light" id="heroImg">
+      <div class="hero-scrim"></div>
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow">Introducing</p>
+      <h1>FranCisco<br>Spaghetti Co.</h1>
+      <p class="hero-sub">Handmade pasta, twirled fresh daily<br>in the heart of San Francisco.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-gold">Explore the Menu</a>
+        <a href="#visit" class="btn btn-ghost">Reserve a Table</a>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- SIGNATURE REVEAL -->
+  <section class="reveal reveal-up" id="signature">
+    <p class="eyebrow center">Our Signature</p>
+    <h2 class="display center">Spaghetti al Pomodoro.<br><em>Reimagined.</em></h2>
+    <p class="lede center">San Marzano tomato. Basil torn by hand. Twenty-four hours of simplicity,<br>done exactly right.</p>
+    <div class="signature-frame reveal-up">
+      <img src="https://images.unsplash.com/photo-1516100882582-96c3a05fe590?auto=format&fit=crop&w=2200&q=80" alt="A tower of handmade spaghetti al pomodoro, elegantly plated">
+    </div>
+    <a href="#menu" class="link-more">See the full menu&nbsp;›</a>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section" id="menu">
+    <p class="eyebrow center">The Menu</p>
+    <h2 class="display center">Four pastas.<br>Handmade daily.</h2>
+
+    <div class="menu-grid">
+      <article class="menu-card reveal-up">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=1200&q=80" alt="Spaghetti al Pomodoro with cherry tomatoes and basil">
+        </div>
+        <div class="menu-card-body">
+          <h3>Spaghetti al Pomodoro</h3>
+          <p>San Marzano tomato, torn basil, Parmigiano-Reggiano.</p>
+          <span class="price">$26</span>
+        </div>
+      </article>
+
+      <article class="menu-card reveal-up">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1200&q=80" alt="Tagliatelle al Ragu with slow braised beef">
+        </div>
+        <div class="menu-card-body">
+          <h3>Tagliatelle al Ragù</h3>
+          <p>Slow-braised beef, hand-rolled egg pasta, Sonoma red wine.</p>
+          <span class="price">$32</span>
+        </div>
+      </article>
+
+      <article class="menu-card reveal-up">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=1200&q=80" alt="Penne Arrabbiata in a rich chili tomato sauce">
+        </div>
+        <div class="menu-card-body">
+          <h3>Penne Arrabbiata</h3>
+          <p>Calabrian chili, garlic, San Marzano, cracked pepper.</p>
+          <span class="price">$24</span>
+        </div>
+      </article>
+
+      <article class="menu-card reveal-up">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1200&q=80" alt="Farfalle Pesto Genovese with cherry tomatoes">
+        </div>
+        <div class="menu-card-body">
+          <h3>Farfalle Pesto Genovese</h3>
+          <p>Basil pesto, cherry tomato, toasted pine nut.</p>
+          <span class="price">$27</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CRAFT SPLIT 1 -->
+  <section class="split" id="craft">
+    <div class="split-media reveal-fade">
+      <img src="https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=1800&q=80" alt="Chef carefully plating a dish, hands in focus">
+    </div>
+    <div class="split-copy reveal-up">
+      <p class="eyebrow">Our Craft</p>
+      <h2 class="display">Every noodle,<br>handmade.</h2>
+      <p class="lede">00 flour. San Francisco Bay water. Nothing else. Our pasta is rolled,
+      cut, and cooked to order — never sitting, never rushed. It's the
+      difference you taste in the first bite.</p>
+    </div>
+  </section>
+
+  <!-- CRAFT SPLIT 2 (reversed) -->
+  <section class="split split-reverse">
+    <div class="split-media reveal-fade">
+      <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=1800&q=80" alt="Fresh ingredients laid out on a wooden cutting board">
+    </div>
+    <div class="split-copy reveal-up">
+      <p class="eyebrow">Sourced With Intention</p>
+      <h2 class="display">From Bay Area farms<br>to your table.</h2>
+      <p class="lede">We work with growers across Sonoma and Marin for tomatoes,
+      basil, and greens picked at their peak — then carry them straight
+      into our kitchen the same morning.</p>
+    </div>
+  </section>
+
+  <!-- THE CITY -->
+  <section class="city" id="city">
+    <div class="city-media">
+      <img src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?auto=format&fit=crop&w=2400&q=80" alt="The Golden Gate Bridge at sunset">
+      <div class="city-scrim"></div>
+    </div>
+    <div class="city-content reveal-up">
+      <p class="eyebrow light">The City</p>
+      <blockquote>San Francisco raised us.<br>Every dish is a love letter to it.</blockquote>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience" id="experience">
+    <p class="eyebrow center">The Experience</p>
+    <h2 class="display center">A table worth<br>lingering at.</h2>
+    <div class="experience-grid">
+      <div class="experience-img tall reveal-up">
+        <img src="https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=1400&q=80" alt="Guests enjoying dinner together at a warmly lit table">
+      </div>
+      <div class="experience-img reveal-up">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=80" alt="A beautifully plated dish being served table-side">
+      </div>
+      <div class="experience-text reveal-up">
+        <p class="lede">Warm brick, low light, and an open pasta counter where you can
+        watch every order twirled by hand. Whether it's a quiet dinner for
+        two or a long table with friends, we built this room to slow you
+        down.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <p class="eyebrow center">Visit</p>
+    <h2 class="display center">We'll save you<br>a table.</h2>
+
+    <div class="visit-grid">
+      <div class="visit-info reveal-up">
+        <div class="visit-block">
+          <h3>Franchandler's Spaghetti Company</h3>
+          <p>1 Ferry Building<br>San Francisco, CA 94111</p>
+        </div>
+        <div class="visit-block">
+          <h3>Hours</h3>
+          <p>Tuesday – Sunday, 5:00 PM – 10:30 PM<br>Closed Mondays</p>
+        </div>
+        <div class="visit-block">
+          <h3>Contact</h3>
+          <p><a href="tel:+14155550142">(415) 555-0142</a><br>
+          <a href="mailto:reservations@franciscospaghetti.co">reservations@franciscospaghetti.co</a></p>
+        </div>
+        <a href="mailto:reservations@franciscospaghetti.co?subject=Reservation%20Request" class="btn btn-gold">Request a Reservation</a>
+      </div>
+      <div class="visit-map reveal-fade">
+        <iframe
+          title="Map to Franchandler's Spaghetti Company, San Francisco"
+          src="https://www.google.com/maps?q=Ferry+Building,San+Francisco,CA&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col footer-brand">
+      <p class="footer-wordmark">FranCisco Spaghetti Co.</p>
+      <p class="footer-tag">Franchandler's Spaghetti Company<br>San Francisco, California</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#menu">Menu</a>
+      <a href="#craft">Our Craft</a>
+      <a href="#city">The City</a>
+      <a href="#experience">Experience</a>
+    </div>
+    <div class="footer-col">
+      <h4>Visit</h4>
+      <a href="#visit">Reservations</a>
+      <a href="tel:+14155550142">(415) 555-0142</a>
+      <a href="mailto:reservations@franciscospaghetti.co">Email Us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+    </div>
+  </div>
+  <div class="footer-legal">
+    <p>© <span id="year"></span> Franchandler's Spaghetti Company, doing business as FranCisco Spaghetti Co. All rights reserved. San Francisco, California.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
