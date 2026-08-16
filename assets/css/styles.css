@@ -34,7 +34,7 @@ body{
   color:var(--ink);
   background:var(--white) url('../images/fran-headshot.jpg');
   background-repeat:repeat;
-  background-size:34px 34px;
+  background-size:240px 240px;
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
   overflow-x:hidden;
@@ -52,7 +52,7 @@ body{
 .experience-img{
   background-image:url('../images/fran-headshot.jpg');
   background-repeat:repeat;
-  background-size:36px 36px;
+  background-size:260px 260px;
 }
 .hero-media img,
 .signature-frame img,
